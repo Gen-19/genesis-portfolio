@@ -9,5 +9,4 @@ The site showcases my work as a digital content producer, including journalism, 
 - `Genesis_Obando_Resume.pdf` – downloadable resume
 - Portfolio videos and images
 
-The website is hosted using GitHub Pages: 
-https://gen-19.github.io/genesis-portfolio/
+The website is hosted using GitHub Pages
