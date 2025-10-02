@@ -20,6 +20,14 @@ header {
 header h1 { margin:0; font-size:2.2rem; }
 header p { margin:0.5rem 0; }
 
+header a {
+    color: white;               /* White text for email/LinkedIn in header */
+    text-decoration: underline; /* Optional: shows it’s a link */
+}
+header a:hover {
+    color: #ffcc00;             /* Optional: hover color for interactivity */
+}
+
 /* Navigation */
 nav { 
     display:flex; 
