@@ -23,7 +23,9 @@ header {
     background:#0b3d91; 
     color:white; 
     text-align:center; 
-    padding:3rem 1rem; 
+    padding:3rem 1rem 2rem 1rem; 
+    position: relative;
+    z-index: 1001;
 }
 header h1 { 
     margin:0; 
