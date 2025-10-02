@@ -10,3 +10,4 @@ The site showcases my work as a digital content producer, including journalism, 
 - Portfolio videos and images
 
 The website is hosted using GitHub Pages: 
+https://gen-19.github.io/genesis-portfolio/
