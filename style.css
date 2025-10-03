@@ -48,8 +48,8 @@ header {
 }
 
 .profile-pic {
-    width: 275px;                 /* adjust size as needed */
-    height: 275px;
+    width: 260px;                 /* adjust size as needed */
+    height: 260px;
     border-radius: 50%;           /* makes it circular */
     object-fit: cover;            /* ensures the image scales correctly */
     flex-shrink: 0;               /* prevent shrinking */
