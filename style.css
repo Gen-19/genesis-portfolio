@@ -37,6 +37,27 @@ header {
     position: relative;
     z-index: 1001;
 }
+/* Flex layout for profile picture and text */
+.header-container {
+    display: flex;
+    align-items: center;          /* vertically center image and text */
+    justify-content: center;      /* center horizontally */
+    gap: 20px;                    /* space between image and text */
+    flex-wrap: wrap;              /* allow wrapping on small screens */
+    text-align: left;             /* align text to left on large screens */
+}
+
+.profile-pic {
+    width: 120px;                 /* adjust size as needed */
+    height: 120px;
+    border-radius: 50%;           /* makes it circular */
+    object-fit: cover;            /* ensures the image scales correctly */
+    flex-shrink: 0;               /* prevent shrinking */
+}
+
+.header-text {
+    max-width: 600px;             /* optional: limit width for large screens */
+}
 header h1 { 
     margin:0; 
     font-size:2.8rem; 
@@ -148,8 +169,21 @@ footer {
 
 /* Responsive */
 @media(max-width:650px){ 
-    .portfolio-item { flex-direction:column; align-items:center; text-align:center; }
-    .portfolio-item img { width:100%; max-width:300px; }
+     .header-container {
+        flex-direction: column;   /* stack image above text */
+        text-align: center;       /* center text */
+    }
+    .profile-pic {
+        margin-bottom: 10px;
+    }
+    .portfolio-item { 
+        flex-direction:column; 
+        align-items:center; 
+        text-align:center;
+    }
+    .portfolio-item img { 
+        width:100%; 
+        max-width:300px; }
 }
 /* NJ Spotlight Articles Grid */
 .article-grid {
