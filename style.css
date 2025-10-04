@@ -212,6 +212,20 @@ footer {
 .gallery-grid img:hover {
   transform: scale(1.03);
 }
+/* Wrap each image with its credit */
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Credit text under each photo */
+.photo-credit {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.3rem;
+  text-align: center;
+}
 
 .article-card {
     background: #fdfdfd;
