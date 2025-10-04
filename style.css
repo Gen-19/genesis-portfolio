@@ -31,7 +31,7 @@ a {
 /* Header */
 header { 
     background:#cccccc; 
-    color:white; 
+    color: #222; 
     text-align:center; 
     padding:3rem 1rem 2rem 1rem; 
     position: relative;
@@ -68,7 +68,7 @@ header p {
     font-size:1.1rem;
 }
 header a {
-    color: white;               
+    color: #222;               
     text-decoration: underline; 
 }
 header a:hover {
