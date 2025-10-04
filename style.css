@@ -15,7 +15,7 @@ h1 {
 h2, h3 {
     font-family: 'Merriweather', serif;
     font-weight: 700;
-    color:#0b3d91;
+    color:#222;
 }
 
 header h1 {
@@ -24,7 +24,7 @@ header h1 {
 
 a { 
     text-decoration:none; 
-    color:#0b3d91; 
+    color:#222; 
     transition:0.3s; 
 }
 
@@ -159,7 +159,7 @@ section h2 {
 
 /* Footer */
 footer { 
-    background:#0b3d91; 
+    background:#222; 
     color:white; 
     text-align:center; 
     padding:1.5rem 1rem; 
