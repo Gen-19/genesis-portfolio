@@ -62,6 +62,32 @@
             <a href="https://youtu.be/gdEHfHKokeQ" target="_blank" class="button">Spanish Version</a>
         </div>
     </div>
+    <!-- Embedded videos (hidden by default) -->
+    <div id="PRvideo1" style="display:none; text-align:center; margin:20px 0;">
+        <iframe width="100%" max-width="560" height="315" src="https://www.youtube.com/embed/U0alXbQWEZ8" 
+            title="Mission to Puerto Rico – Open for Business" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        <br>
+        <button class="button" onclick="hideVideo('PRvideo1')">Minimize</button>
+    </div>
+
+    <div id="PRvideo1Spanish" style="display:none; text-align:center; margin:20px 0;">
+        <iframe width="100%" max-width="560" height="315" src="https://www.youtube.com/embed/gdEHfHKokeQ" 
+            title="Misión a Puerto Rico – Open for Business (Spanish)" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        <br>
+        <button class="button" onclick="hideVideo('PRvideo1Spanish')">Minimize</button>
+    </div>
+    <div id="PRvideo1Spanish" style="display:none; text-align:center; margin:20px 0;">
+        <iframe width="100%" max-width="560" height="315" src="https://www.youtube.com/embed/gdEHfHKokeQ" 
+            title="Misión a Puerto Rico – Open for Business (Spanish)" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+        <br>
+        <button class="button" onclick="hideVideo('PRvideo1Spanish')">Minimize</button>
+    </div>
 
 
 </section>
@@ -80,6 +106,18 @@
 <footer>
     <p>© 2025 Genesis Obando. All rights reserved.</p>
 </footer>
+<!-- JavaScript to show/hide videos -->
+<script>
+function showVideo(id) {
+    document.getElementById(id).style.display = 'block';
+    document.getElementById(id).scrollIntoView({behavior: "smooth"});
+}
+function hideVideo(id) {
+    document.getElementById(id).style.display = 'none';
+}
+</script>
 
 </body>
 </html>
+
+
