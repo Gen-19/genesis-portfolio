@@ -261,5 +261,18 @@ footer {
   width:100%;
   height:100%;
 }
+/* Instagram vertical video container */
+.insta-container {
+  max-width: 400px; /* keeps a nice width for vertical layout */
+  margin: 0 auto;   /* centers the post */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.insta-container iframe {
+  width: 100%;
+  height: 600px; /* gives enough room for tall posts */
+  border: none;
+}
 
 
