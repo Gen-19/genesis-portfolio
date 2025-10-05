@@ -261,7 +261,8 @@ footer {
   width:100%;
   height:100%;
 }
-.insta-container {
+/* Wrapper for Instagram post to reserve space */
+.insta-wrapper {
   max-width: 400px;          /* width of your Instagram post */
   height: 500px;             /* height to match visible post */
   margin: 1rem auto 2rem auto;
@@ -273,13 +274,15 @@ footer {
   align-items: center;
 }
 
-.insta-container blockquote.instagram-media {
+/* Target the Instagram embed */
+.insta-wrapper blockquote.instagram-media {
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
 }
 
-.insta-container iframe {
+/* Iframe inside the blockquote */
+.insta-wrapper iframe {
   width: 100% !important;
   height: 100% !important;
   border: none;
