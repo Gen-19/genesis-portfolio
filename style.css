@@ -262,38 +262,26 @@ footer {
   height:100%;
 }
 
-/* Instagram vertical video container */
 .insta-container {
-  position: relative;
-  max-width: 400px;  /* or 540px if you want full Instagram max */
-  margin: 0 auto;    /* center the post */
-  border-radius: 12px;
-  overflow: hidden;
+  max-width: 400px;       /* width of the video container */
+  margin: 0 auto;         /* center horizontally */
 }
 
-/* Create correct aspect ratio for vertical reels (9:16) */
-.insta-container::before {
-  content: "";
-  display: block;
-  padding-top: 177.78%; /* 16 ÷ 9 for vertical ratio */
-}
-
-/* Position blockquote absolutely inside container */
 .insta-container blockquote.instagram-media {
-  position: absolute !important;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0 auto !important;   /* remove default Instagram margins */
+  width: 100% !important;      /* make embed full width of container */
+  min-width: 0 !important;     /* override Instagram min-width */
 }
 
-/* Hide extra iframe border if any */
 .insta-container iframe {
+  width: 100% !important;      /* let iframe fill container width */
+  height: auto !important;     /* let Instagram handle height */
   border: none;
-  width: 100% !important;
-  height: 100% !important;
+  display: block;
 }
+
+
+
+
 
 
