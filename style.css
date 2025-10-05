@@ -1,16 +1,5 @@
 /* Typography */
-/* Make body and html full height and allow flex layout */
-html, body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
 
-/* Ensure footer stays at the bottom */
-body > footer {
-  margin-top: auto;
-}
 
 body { 
     font-family: 'Roboto', sans-serif; 
@@ -288,34 +277,3 @@ footer {
   position: relative;        /* keep embed constrained */
 }
 
-/* Force Instagram embed blockquote to stay inside container */
-.insta-wrapper blockquote.instagram-media {
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
-  height: 100%;             /* match container height */
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-
-/* iframe inside the embed */
-.insta-wrapper iframe {
-  width: 100% !important;
-  height: 100% !important;
-  border: none;
-  display: block;
-  position: absolute;       /* fill the wrapper */
-  top: 0;
-  left: 0;
-}
-
-/* NEW: Center main content vertically for Instagram page */
-.main-content {
-  flex: 1;                   /* fills space between nav and footer */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;   /* vertical centering */
-  align-items: center;       /* horizontal centering */
-  text-align: center;
-}
