@@ -269,15 +269,17 @@ footer {
   overflow: hidden;
   height: 600px;           /* reserve the height so layout doesn't jump */
   background: #f9f9f9;     /* optional: light background before loading */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .insta-container blockquote.instagram-media {
+  position: absolute;
+  top: 0 ;
+  left: 0;
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
+  border: none;
 }
 
 .insta-container iframe {
