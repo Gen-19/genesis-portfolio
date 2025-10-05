@@ -261,31 +261,27 @@ footer {
   width:100%;
   height:100%;
 }
-/* Instagram vertical video layout */
 .insta-container {
-  max-width: 400px;       /* keeps a nice width for vertical layout */
-  margin: 1rem auto;      /* centers the post and adds some spacing */
+  max-width: 400px;          /* width of your Instagram post */
+  height: 500px;             /* height to match visible post */
+  margin: 1rem auto 2rem auto;
   border-radius: 12px;
   overflow: hidden;
-  height: 500px;           /* reserve the height so layout doesn't jump */
-  background: #f9f9f9;     /* optional: light background before loading */
-  
+  background: #f0f0f0;       /* placeholder color while loading */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .insta-container blockquote.instagram-media {
-  position: absolute;
-  top: 0 ;
-  left: 0;
   width: 100% !important;
   min-width: 0 !important;
   max-width: 100% !important;
-  border: none;
 }
 
 .insta-container iframe {
-  width: 100%;
-  height: 100%;            /* fills the reserved height */
+  width: 100% !important;
+  height: 100% !important;
   border: none;
+  display: block;
 }
-
-
