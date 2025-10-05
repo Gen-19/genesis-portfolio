@@ -276,22 +276,27 @@ footer {
 }
 /* Instagram wrapper container */
 .insta-wrapper {
-  max-width: 400px;           /* width of Instagram post */
-  height: 500px;              /* reserve height for post */
-  margin: 2rem auto;          /* centers horizontally */
+  width: 400px;             /* fixed width */
+  height: 500px;            /* fixed height */
+  margin: 2rem auto;        /* center horizontally */
   border-radius: 12px;
-  overflow: hidden;
-  background: #f0f0f0;        /* placeholder while loading */
+  overflow: hidden;         /* prevent full-screen thumbnail */
+  background: #f0f0f0;      /* placeholder while loading */
   display: flex;
-  justify-content: center;     /* horizontal center */
-  align-items: center;         /* vertical center */
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  position: relative;        /* keep embed constrained */
 }
 
-/* Instagram embed blockquote */
+/* Force Instagram embed blockquote to stay inside container */
 .insta-wrapper blockquote.instagram-media {
   width: 100% !important;
-  min-width: 0 !important;
   max-width: 100% !important;
+  min-width: 0 !important;
+  height: 100%;             /* match container height */
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 
 /* iframe inside the embed */
@@ -300,7 +305,11 @@ footer {
   height: 100% !important;
   border: none;
   display: block;
+  position: absolute;       /* fill the wrapper */
+  top: 0;
+  left: 0;
 }
+
 /* NEW: Center main content vertically for Instagram page */
 .main-content {
   flex: 1;                   /* fills space between nav and footer */
