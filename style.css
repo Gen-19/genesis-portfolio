@@ -261,14 +261,14 @@ footer {
   width:100%;
   height:100%;
 }
-/* Wrapper for Instagram post to reserve space */
+/* Wrapper for Instagram post to reserve space and center */
 .insta-wrapper {
   max-width: 400px;          /* width of your Instagram post */
-  height: 500px;             /* height to match visible post */
-  margin: 1rem auto 2rem auto;
+  height: 500px;             /* adjust to show only video part */
+  margin: 1rem auto 2rem auto; /* center horizontally */
   border-radius: 12px;
-  overflow: hidden;
-  background: #f0f0f0;       /* placeholder color while loading */
+  overflow: hidden;          /* hides the bottom Instagram UI */
+  background: #f0f0f0;       /* placeholder while loading */
   display: flex;
   justify-content: center;
   align-items: center;
