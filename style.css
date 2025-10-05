@@ -1,4 +1,17 @@
 /* Typography */
+/* Make body and html full height and allow flex layout */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Ensure footer stays at the bottom */
+body > footer {
+  margin-top: auto;
+}
+
 body { 
     font-family: 'Roboto', sans-serif; 
     margin:0; 
