@@ -261,27 +261,27 @@ footer {
   width:100%;
   height:100%;
 }
-
+/* Instagram vertical video layout */
 .insta-container {
-  max-width: 400px;       /* width of the video container */
-  margin: 0 auto;         /* center horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  max-width: 420px; /* controls the width for vertical format */
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .insta-container blockquote.instagram-media {
-  margin: 0 auto !important;   /* remove default Instagram margins */
-  width: 100% !important;      /* make embed full width of container */
-  min-width: 0 !important;     /* override Instagram min-width */
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
 }
 
 .insta-container iframe {
-  width: 100% !important;      /* let iframe fill container width */
-  height: auto !important;     /* let Instagram handle height */
+  width: 100%;
+  height: 600px; /* taller view for vertical posts */
   border: none;
-  display: block;
 }
-
-
-
-
-
 
