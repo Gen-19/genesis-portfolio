@@ -288,3 +288,12 @@ footer {
   border: none;
   display: block;
 }
+/* NEW: Center main content vertically for Instagram page */
+.main-content {
+  flex: 1;                   /* fills space between nav and footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical centering */
+  align-items: center;       /* horizontal centering */
+  text-align: center;
+}
