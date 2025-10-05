@@ -267,7 +267,7 @@ footer {
   margin: 1rem auto;      /* centers the post and adds some spacing */
   border-radius: 12px;
   overflow: hidden;
-  height: 600px;           /* reserve the height so layout doesn't jump */
+  height: 500px;           /* reserve the height so layout doesn't jump */
   background: #f9f9f9;     /* optional: light background before loading */
   
 }
