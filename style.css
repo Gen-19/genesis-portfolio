@@ -275,7 +275,7 @@ footer {
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   overflow: hidden;
   background-color: #fff;    /* matches Instagram background */
-  min-height: 800px;         /* gives it space while loading */
+  min-height: 975px;         /* gives it space while loading */
   transition: all 0.3s ease; /* smooth resizing once loaded */
 }
 
